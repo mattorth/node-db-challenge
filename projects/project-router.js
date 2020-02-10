@@ -5,7 +5,7 @@ const Projects = require('./project-model.js');
 const router = express.Router();
 
 // POST Resource
-router.post('/resource', (req, res) => {
+router.post('/resources', (req, res) => {
     const resourceData = req.params.body;
 
     Projects.addResource(resourceData)
